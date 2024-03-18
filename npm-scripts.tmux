@@ -9,4 +9,5 @@ tmux_option_or_fallback() {
 	fi
 	echo "$option_value"
 }
+
 tmux bind-key "$(tmux_option_or_fallback "@npm-scripts" "l")" run-shell "$CURRENT_DIR/scripts/scripts.sh"
